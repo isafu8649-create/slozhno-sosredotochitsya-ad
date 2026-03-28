@@ -4,11 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light">
     <title>Сложно сосредоточиться</title>
-    <script src="./scripts/script.js"></script>
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/globals.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/dark.css">
+    <link rel="stylesheet" href="./styles/light.css">
+    <link rel="icon" href="./images/favicon.ico">
   </head>
   <body class="page">
-    <header class="header decorated-zone">
+    <header class="header decorated-corner">
+      <div class="header__rec" aria-hidden="true">REC</div>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
@@ -35,6 +42,81 @@
           </li>
         </ul>
       </nav>
+      <h1 class="header__title">no focus</h1>
+      <p class="header__description title-decor">Что делать, когда не можешь делать ничего<br>Или почему нам так сложно сконцентрироваться, особенно когда очень надо</p>
     </header>
+
+    <main class="main">
+      <section class="section section-why">
+        <h2 class="section__title">Почему сложно сосредоточиться?</h2>
+        <div class="section__content">
+          <article class="card">
+            <h3 class="card__title title-decor">Многозадачность</h3>
+            <p class="card__text">Особенно сложно сосредоточиться, когда задач много и все они — важные. Где же легендарная многозадачность, когда она так нужна вам (и всем нанимающим менеджерам)? А дело в том, что её просто не существует. Исследователи <a href="#" class="link">выяснили</a>, что мозгу тяжело концентрироваться даже на двух делах одновременно. А когда в поле внимания попадает несколько важных задач, организм паникует и выделяет кортизол и адреналин — «гормоны стресса». Из-за этого мы работаем невнимательно.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">Дофамин</h3>
+            <p class="card__text">С гормонами стресса всё понятно, но дальше — ещё интереснее. В нашей невозможности сосредоточиться замешана и полная противоположность стрессу — дофамин. Это вещество участвует в системе вознаграждения мозга. Причём тут он? Мы часто отвлекаемся на важное дело на что-то «более приятное», и мозги — на «лёгкие дофаминовые иглы». И это подкрепляется поведением: в моменте «попкорнирования» из тиктока тяжело переключиться.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">Внимание к деталям</h3>
+            <p class="card__text">Сосредоточиться на одной детали — часто важная, но очень сложная задача. Мозг привык реагировать на новые стимулы — и именно этот навык делает нашу жизнь возможной. В желании «побыть в моменте» мы словно убегаем от реальности. Рискуя выгореть, мы в принципе теряем способность глубоко воспринимать информацию и долго держать фокус на чём-то одном.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-what">
+        <h2 class="section__title">Что снижает концентрацию?</h2>
+        <div class="section__content">
+          <article class="card">
+            <h3 class="card__title title-decor">Нейробиологические факторы</h3>
+            <p class="card__text">Стресс, недостаток сна, нерегулярное питание — всё это может влиять на работу мозга. Когда организм находится в состоянии постоянного напряжения, ему сложно переключаться между задачами и удерживать внимание на одном деле.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">Психологические факторы</h3>
+            <p class="card__text">Страх неудачи, перфекционизм, прокрастинация — эти психологические барьеры мешают нам начать дело или довести его до конца. Мы отвлекаемся, чтобы избежать дискомфорта от сложной задачи.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">Социальные факторы</h3>
+            <p class="card__text">Бесконечные уведомления, социальные сети, ожидание быстрого ответа — современная среда специально создана так, чтобы рассеивать наше внимание. Мы постоянно переключаемся между задачами, даже не замечая этого.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-how">
+        <h2 class="section__title">Как концентрироваться лучше?</h2>
+        <div class="section__content">
+          <article class="card">
+            <h3 class="card__title title-decor">Техники осознанности</h3>
+            <p class="card__text">Медитация, дыхательные упражнения, практики заземления — всё это помогает вернуть внимание в настоящий момент. Начните с 5 минут в день, и вы заметите разницу.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">Управление средой</h3>
+            <p class="card__text">Создайте пространство, которое помогает фокусироваться. Уберите лишние предметы со стола, используйте наушники с шумоподавлением, отключите уведомления на время работы.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">Режим и ритуалы</h3>
+            <p class="card__text">Наш мозг любит предсказуемость. Создайте утренний ритуал, который настраивает на работу. Используйте технику «помидора» — 25 минут работы, 5 минут отдыха. Это помогает войти в состояние потока.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="gallery-section">
+        <h2 class="gallery-section__title title-decor">Галерея</h2>
+        <div class="gallery">
+          <img class="gallery__image" src="./images/sunset.png" alt="Закат над горами с фиолетово-оранжевым небом" loading="lazy">
+          <img class="gallery__image" src="./images/ice-cream.png" alt="Разноцветные миски с мороженым с милыми персонажами" loading="lazy">
+          <img class="gallery__image" src="./images/tape.png" alt="Ретро кассета с оранжево-фиолетовым дизайном" loading="lazy">
+          <img class="gallery__image" src="./images/books.png" alt="Стопка книг с фигуркой кота сверху" loading="lazy">
+          <img class="gallery__image" src="./images/street.png" alt="Пустая улица на закате с пастельными зданиями" loading="lazy">
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer decorated-corner">
+      <h2 class="footer__title">focus</h2>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
